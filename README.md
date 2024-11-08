@@ -10,8 +10,9 @@ Assicurati di avere installati i seguenti strumenti:
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## Configurazione del progetto
+1. copiare il file .env.example in .env
 
-2. **Costruisci e avvia i container** :
+1. **Costruisci e avvia i container** :
 
    ```bash
    docker-compose up -d --build
