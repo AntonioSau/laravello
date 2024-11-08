@@ -31,6 +31,8 @@ WORKDIR /var/www
 # Copia i file di configurazione locali nel container
 COPY . .
 
+RUN composer install --no-interaction --prefer-dist --optimize-autoloader
+
 # Imposta i permessi per le cartelle necessarie
 RUN chmod -R 775 storage bootstrap/cache && \
     chown -R www-data:www-data storage bootstrap/cache
